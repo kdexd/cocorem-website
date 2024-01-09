@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+    {% include navigation.html %}
+    <style>
+        /* Add custom CSS to increase space between header and main content */
+        main {
+            margin-top: 20px; /* Adjust the value as needed */
+        }
+    </style>
+
+
+    <main>
+        <div class="container">
+        {{ content }}
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">Maintaine d by: <a href="https://github.com/Shweta-singh1">Shweta Singh </a> & <a href="https://github.com/ydvaayan">Aayan Yadav</a> </p>
+        </div>
+    </footer>
+<!-- Your React app container -->
+
+
+<script src="{{ site.baseurl }}/assets/js/explore-app/static/js/main.6093c0d7.js" type='module'></script>
+</body>
+</html>

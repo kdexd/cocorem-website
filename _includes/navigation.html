@@ -1,0 +1,22 @@
+<link rel="stylesheet" type="text/css" href="/static/css/navbar.css">
+<nav id="navbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+        <div id="site-title-container">
+          <span id="site-title"><a href="/">COCO-ReM</a></span>
+        </div>
+        <div class="navbar-ul-container" style="margin-top: 5px">
+
+          <ul class="navbar-ul float-right">
+            {% for item in site.data.navigation %} {% if forloop.index > 1 %}
+            <li class="nav-listitem">
+              <a href="{{ site.baseurl }}{{ item.link }}">{{ item.name }}</a>
+            </li>
+            {% endif %} {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

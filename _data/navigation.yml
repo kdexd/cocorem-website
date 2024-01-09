@@ -1,0 +1,10 @@
+- name: COCO-ReM
+  link: /
+- name: Explore
+  link: /_pages/explore.html
+- name: Download
+  link: /_pages/download.html
+# - name: About
+#   link: /about.html
+- name: Paper
+  link: /paper.html

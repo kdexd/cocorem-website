@@ -1,0 +1,16 @@
+.vscode
+.DS_Store
+
+# Jekyll stuff.
+_site
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+
+Gemfile.lock
+
+# React stuff.
+explore-app/build
+explore-app/node_modules
+explore-app/static
+explore-app/yarn.lock

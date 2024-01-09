@@ -1,0 +1,118 @@
+---
+---
+@import "style";
+
+/************************************************
+ |  Navbar                                      |
+ ************************************************/
+
+#navbar {
+    color: $navbar-text-color;
+    position: fixed;
+    padding: 1rem 0 0 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #029E73;
+    z-index: 1030;
+}
+
+#site-title-container {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#site-title a {
+    color: $navbar-text-color;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.navbar-ul-container {
+    display: inline-block;
+    float: right;
+
+    .navbar-ul {
+        margin: 0.5rem 0 0 0;
+    }
+
+    .nav-listitem {
+        margin: 0 15px 0 15px;
+        font-size: 1.2rem;
+        display: inline-block;
+        text-transform: uppercase;
+        a {
+            color: $navbar-text-color;
+            font-weight: 700;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    #navbar {
+        position: absolute;
+        text-align: center;
+        padding: 10px 0px 0px 0px;
+    }
+
+    #site-title-container {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+
+    .navbar-ul-container {
+        display: block;
+        float: none;
+        padding: 10px 0 10px 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+
+        // Center navigation links below logo.
+        .navbar-ul {
+            padding: 0;
+            display: flex;
+    
+        }   
+        .nav-listitem {
+            margin: 5px 25px; /* Adjust the margin as needed */
+            
+        }
+    }
+}
+@media (max-width: 400px) {
+    #navbar {
+        position: absolute;
+        text-align: center;
+        padding: 10px 0px 0px 0px;
+    }
+
+    #site-title-container {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+
+    .navbar-ul-container {
+        display: block;
+        float: none;
+        padding: 10px 0 10px 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+
+        // Center navigation links below logo.
+        .navbar-ul {
+            padding: 0;
+            display: flex;
+    
+        }   
+        .nav-listitem {
+            margin: 5px 15px; /* Adjust the margin as needed */
+            
+        }
+    }
+}
