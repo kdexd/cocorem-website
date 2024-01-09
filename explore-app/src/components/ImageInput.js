@@ -20,18 +20,24 @@ const ImageInput = ({ onImageIdChange}) => {
 
   return (
     <div>
-      <h2>Enter Image ID</h2>
-      <form onSubmit={handleSubmit}>
+      <div class="container">
+      <form onSubmit={handleSubmit} className="d-flex">
         <input
-          type="text"
+          className="form-control me-2"
+          type="search"
           placeholder="Enter Image ID"
+          aria-label="Search"
           value={imageId}
           onChange={handleChange}
         />
-        <button type='submit'>Submit</button>
+        <button className="btn btn-outline-success" type="submit">
+          Search
+        </button>
       </form>
+    </div>
     </div>
   );
 };
+
 
 export default ImageInput;
