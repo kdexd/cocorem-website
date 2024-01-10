@@ -2,62 +2,39 @@
 ---
 @import "style";
 
-// Add a faint gray underline in anchors of main section.
-// .cover-container {
-//     height: 350px;  // calc(100vh - 300px);
-//     margin-top: -0.5rem;
-//     margin-bottom: 0.5rem;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
-//     background-color: #029E73;
-
-//     .cover-text {
-//         color: white;
-//         width: 45rem;
-//         font-size: 2.5rem;
-//     }
-// }
-
-// .cover-subtitle-container {
-//     margin-top: -5rem;
-//     margin-bottom: 2rem;
-//     background-color: white;
-//     box-shadow: 0 .5rem 1rem rgba(black, .15);
-// }
-
-// .home-stats {
-//     margin-top: 2rem;
-//     margin-bottom: 2rem;
-// }
-
 .cocorem {
     color: #00CC66;
     font-weight: 700;
     font-size: 2.5rem;
 }
 
-.stat-subtext {
-    font-size: 1.25rem;
-}
-
-.container.teaser{
-    padding-bottom: 1%;
-}
 .btn{
     background-color: #029E73;
     border-color: #029E73;
 
 }
+#carouselExample {
+
+.carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    opacity: 5;
+    background-color: black; // Set the color of the button icon
+    border-radius: 50%; // Make the icon circular
+    transition: background-color 0.3s ease;
+  }
+
+    
+  }
 .additional-content {
     border: 1px solid #ced4da;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
     // margin-top: 2%;
     margin-left: 0px;
     margin-right: 0px;
     background-color: #fff;
+    margin-bottom: -25px;
+    margin-top: -25px;
     
 }
 
@@ -79,35 +56,13 @@ p {
     text-align: center;
     border: 1px solid #ced4da;
     border-radius: 5px;
-    padding: 20px;
-    // margin-top: 5px;
+    padding: 5px;
     margin-left: 0px;
     margin-right: 0px;
     background-color: #fff;
     
 
-
-.download-box a {
-    background-color:$nav-header-footer-heading; 
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    border: 1.5px solid rgb(9, 145, 61);
-    transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transition */
-
-    &:hover {
-        background-color: rgb(9, 145, 61); /* Hover background color */
-        color: white; /* Hover text color */
-    }
 }
-
-}
-// #validationBtn{
-//     margin-right: 150px;
-// }
 .team-section {
     text-align: center;
     margin-top: 50px;
@@ -147,21 +102,7 @@ p {
 body {
     margin-top: 4%;
 }
-@media (max-width: 1024px) {
-    body {
-        padding-top: 50px;
-    }
-    
-    .cover-container {
-        height: 300px;
-        .cover-text {
-            width: 30rem;
-            font-size: 1.7rem;
-        }
-    }
-}
 @media (max-width: 650px) {
-    
     .cover-container {
         height: 300px;
         .cover-text {
@@ -172,9 +113,6 @@ body {
 }
 
 @media (max-width: 500px) {
-    body {
-        padding-top: 120px;
-    }
     .cover-container {
         height: 250px;
         .cover-text {

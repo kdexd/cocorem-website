@@ -3,25 +3,10 @@ layout: default
 permalink: "/"
 ---
 <link rel="stylesheet" type="text/css" href="/static/css/home.css">
-<!-- <div class="cover-container">
-  <div class="text-center cover-text">Benchmarking Object Detectors with COCO: Are We at a Crossroads?</div>
-  <div class="text-center cover-text">Presenting:</div>
-</div>
 
-
-<div class="cover-subtitle-container container">
-  <div class="row">
-    <div class="col home-stats" style="text-align: center">
-        <span class="cocorem">COCO-ReM</span>
-    </div>
-  </div>
-</div> -->
 
 <div class="container">
  <div class="card text-center">
-    <!-- <div class="card-header">
-      <h2 class="card-title mb-0">Teaser</h2>
-    </div> -->
     <div class="card-body">
 <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
@@ -56,11 +41,14 @@ permalink: "/"
 <div class="container mt-5">
 <div class="download-section">
             <h2 class="section-title">Download COCO-ReM</h2>
-            <div class="download-box">
-                <a href="/path/to/validation/set/download" class="btn btn-primary"  id="validationBtn">Download Validation set</a>
-                 <a href="/path/to/train/set/download" class="btn btn-primary" id="trainBtn">Download Train set</a>
+            <div class="row">
+            <div class="col-md-6 mb-3 ml-auto">
+                <a href="/path/to/validation/set/download" class="btn btn-primary" id="validationBtn" style="white-space: nowrap;">Download Validation set</a>
             </div>
-           <br>
+            <div class="col-md-6 mb-3">
+                <a href="/path/to/train/set/download" class="btn btn-primary" id="trainBtn">Download Train set</a>
+            </div>
+
             <!-- <p class="section-description">Explore and download the latest version of the COCO-ReM dataset for your research.</p> -->
         </div>
 </div>

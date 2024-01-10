@@ -148,17 +148,14 @@ footer {
         max-width: 100%;
         transition: 0.3s ease all;
     }
-    body {
-        padding-top: 30px;
-    }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1440px) {
     .container {
         max-width: 100%;
     }
     body {
-        padding-top: 100px;
+        padding-top: 50px;
     }
 }
 
@@ -167,6 +164,6 @@ footer {
         max-width: 100%;
     }
     body {
-        padding-top: 60px;
+        padding-top: 120px;
     }
 }
