@@ -63,14 +63,14 @@ const ImageDisplay = ({ imageId, annotations1, annotations2 }) => {
   return (
     <div>
       <div className="row">
-        <div className="col">
-      <div id="image-container1" style={{ position: 'relative', display: 'inline-block' }}>
-        <h1>COCO 2017</h1>
+        <div className="col-md-6 mb-3">
+      <div id="image-container1" style={{ position: 'relative', display: 'inline-block', textAlign: 'center' }}>
+        <h1 style={{ color: '#029E73' }}>COCO 2017</h1>
       </div>
       </div>
-      <div className="col">
-      <div id="image-container2" style={{ position: 'relative', display: 'inline-block' }}>
-        <h1>COCO-ReM</h1>
+      <div className="col-md-6 mb-3">
+      <div id="image-container2" style={{ position: 'relative', display: 'inline-block',textAlign: 'center'}}>
+        <h1 style={{ color: '#029E73' }}>COCO-ReM</h1>
       </div>
     </div>
     </div>
