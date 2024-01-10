@@ -3,7 +3,7 @@ layout: default
 title: Download
 ---
 <link rel="stylesheet" type="text/css" href="/static/css/download.css">
-<main class="container mt-3">
+<main class="container">
     <div class="image-section">
         <div class="container-fluid p-0">
             <div class="shadow-lg p-3 mb-5 bg-white rounded">

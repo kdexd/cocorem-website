@@ -3,34 +3,34 @@
 @import "style";
 
 // Add a faint gray underline in anchors of main section.
-.cover-container {
-    height: 350px;  // calc(100vh - 300px);
-    margin-top: -0.5rem;
-    margin-bottom: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #029E73;
+// .cover-container {
+//     height: 350px;  // calc(100vh - 300px);
+//     margin-top: -0.5rem;
+//     margin-bottom: 0.5rem;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     background-color: #029E73;
 
-    .cover-text {
-        color: white;
-        width: 45rem;
-        font-size: 2.5rem;
-    }
-}
+//     .cover-text {
+//         color: white;
+//         width: 45rem;
+//         font-size: 2.5rem;
+//     }
+// }
 
-.cover-subtitle-container {
-    margin-top: -5rem;
-    margin-bottom: 2rem;
-    background-color: white;
-    box-shadow: 0 .5rem 1rem rgba(black, .15);
-}
+// .cover-subtitle-container {
+//     margin-top: -5rem;
+//     margin-bottom: 2rem;
+//     background-color: white;
+//     box-shadow: 0 .5rem 1rem rgba(black, .15);
+// }
 
-.home-stats {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
+// .home-stats {
+//     margin-top: 2rem;
+//     margin-bottom: 2rem;
+// }
 
 .cocorem {
     color: #00CC66;
@@ -54,7 +54,7 @@
     border: 1px solid #ced4da;
     border-radius: 5px;
     padding: 20px;
-    margin-top: 20px;
+    // margin-top: 2%;
     margin-left: 0px;
     margin-right: 0px;
     background-color: #fff;
@@ -68,18 +68,67 @@ h2 {
 
 p {
     font-size: 1.1em;
+    text-align: center;
+
 }
+.download-section {
+    // margin-top: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 20px;
+    // margin-top: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #fff;
+    
+
+
+.download-box a {
+    background-color:$nav-header-footer-heading; 
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1.5px solid rgb(9, 145, 61);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transition */
+
+    &:hover {
+        background-color: rgb(9, 145, 61); /* Hover background color */
+        color: white; /* Hover text color */
+    }
+}
+
+}
+// #validationBtn{
+//     margin-right: 150px;
+// }
 .team-section {
     text-align: center;
     margin-top: 50px;
 }
 
+.dataset-overview{
+    padding: 20px;
+    border-radius: 3px;
+    
+    .subsection-title{
+        text-align: center;
+        color: #029E73;
+    }
+}
+
 .team-member {
     display: inline-block;
     margin: 20px;
-    padding: 2px;
+    padding: 7px;
     background-color: #fff;
-    border-radius: 5%;
+    border-radius: 4%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
 }
@@ -93,10 +142,26 @@ p {
     height: auto;
     width: 150px;
     height: 150px;
-    border-radius: 5%;
+    border-radius: 4%;
 }
-
+body {
+    margin-top: 4%;
+}
+@media (max-width: 1024px) {
+    body {
+        padding-top: 50px;
+    }
+    
+    .cover-container {
+        height: 300px;
+        .cover-text {
+            width: 30rem;
+            font-size: 1.7rem;
+        }
+    }
+}
 @media (max-width: 650px) {
+    
     .cover-container {
         height: 300px;
         .cover-text {
@@ -107,6 +172,9 @@ p {
 }
 
 @media (max-width: 500px) {
+    body {
+        padding-top: 120px;
+    }
     .cover-container {
         height: 250px;
         .cover-text {

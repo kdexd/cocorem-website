@@ -3,7 +3,7 @@ layout: default
 permalink: "/"
 ---
 <link rel="stylesheet" type="text/css" href="/static/css/home.css">
-<div class="cover-container">
+<!-- <div class="cover-container">
   <div class="text-center cover-text">Benchmarking Object Detectors with COCO: Are We at a Crossroads?</div>
   <div class="text-center cover-text">Presenting:</div>
 </div>
@@ -15,7 +15,7 @@ permalink: "/"
         <span class="cocorem">COCO-ReM</span>
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="container">
  <div class="card text-center">
@@ -48,15 +48,55 @@ permalink: "/"
 </div>
 
 <div class="container mt-5">
-        <div class="additional-content">
-            <h2 class="mb-4">Explore Our Dataset</h2>
-            <p class="lead">Tap into the full potential of the carefully curated COCO-ReM dataset. Explore deep insights and emerging trends that could transform your research and applications. COCO-ReM sets a new standard with superior mask quality, offering a trustworthy evaluation set for the latest in object detectors.</p>
-            <h2 class="mt-4 mb-4">Coming Soon !!</h2>
+    <div class="additional-content">
+        <h2 class="mb-4">Explore Our Dataset</h2>
+        <p class="lead">Tap into the full potential of the carefully curated COCO-ReM dataset. Explore deep insights and emerging trends that could transform your research and applications. COCO-ReM sets a new standard with superior mask quality, offering a trustworthy evaluation set for the latest in object detectors.</p>
+    </div>
+</div>
+<div class="container mt-5">
+<div class="download-section">
+            <h2 class="section-title">Download COCO-ReM</h2>
+            <div class="download-box">
+                <a href="/path/to/validation/set/download" class="btn btn-primary"  id="validationBtn">Download Validation set</a>
+                 <a href="/path/to/train/set/download" class="btn btn-primary" id="trainBtn">Download Train set</a>
+            </div>
+           <br>
+            <!-- <p class="section-description">Explore and download the latest version of the COCO-ReM dataset for your research.</p> -->
         </div>
-  </div>
+</div>
+ <div class="dataset-overview">
+        <h3 class="subsection-title mb-3">Dataset Overview</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Images</h5>
+                        <p class="card-text">5,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Object Categories</h5>
+                        <p class="card-text">80</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Boundaries</h5>
+                        <p class="card-text">Smooth Refined</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <div class="team-section">
     <!-- Shweta Singh-->
+    <h2 class="section-title">Our Team</h2>
     <div class="team-member">
         <a class="image-hyperlink" href="" target="_blank">
             <img class="team-member-pic" src="{{ site.baseurl }}/assets/images/team/Shweta_singh.jpg" />
