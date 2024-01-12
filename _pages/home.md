@@ -96,7 +96,7 @@ permalink: "/"
     <!-- Aayan Yadav -->
     <div class="team-member">
         <a class="image-hyperlink" href="">
-            <img class="team-member-pic" src="{{ site.baseurl }}/assets/images/team/Aayan.jpg" />
+            <img class="team-member-pic" src="{{ site.baseurl }}/assets/images/team/Aayan_yadav.jpg" />
         </a>
         <div class="team-member-name">
             <a href="//github.com/zamborg" target="_blank">Aayan Yadav</a> <sup>*</sup>
