@@ -28,7 +28,8 @@ const ImageDisplay = ({ imageId, annotations1, annotations2 }) => {
 
       filteredAnnotations.forEach((annotation) => {
         const rleData = annotation.segmentation;
-        const imageData = RLEtoMask({ rleData });
+        const isCrowd = annotation.iscrowd;
+        const imageData = RLEtoMask({ rleData , isCrowd});
 
         const newCanvas = document.createElement('canvas');
         newCanvas.className = canvasClassName;

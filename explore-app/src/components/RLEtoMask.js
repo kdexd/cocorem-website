@@ -1,4 +1,4 @@
-const RLEtoMask = ({ rleData }) => {
+const RLEtoMask = ({ rleData, isCrowd }) => {
   const imageWidth = rleData.size[1];
   const imageHeight = rleData.size[0];
   const counts = rleData.counts;
@@ -58,8 +58,42 @@ const RLEtoMask = ({ rleData }) => {
 
     return borderedArray;
   };
+  const addSlantedStripes = (input, width, height) => {
+    // Customize the angle, stripe width, and spacing based on your preference
+    const angle = 135; // Angle of the slanted stripes in degrees
+    const stripeWidth = 6; // Adjust the width of the stripes
+    const stripeSpacing = 12; // Adjust the spacing between the stripes
+  
+    const radians = (angle * Math.PI) / 180;
+    const tanTheta = Math.tan(radians);
+  
+    const stripedArray = Array(width * height).fill(0);
+  
+    for (let i = 0; i < height; i++) {
+      for (let j = 0; j < width; j++) {
+        if (input[i * width + j] === 1) {
+          // Check if a pixel is part of the mask (value equals 1)
+          // If yes, add slanted parallel lines
+          const distanceToLine = Math.abs(j - tanTheta * i) % stripeSpacing;
+  
+          if (distanceToLine < stripeWidth / 2) {
+            stripedArray[i * width + j] = 0; // Inside the slanted stripe
+          } else {
+            stripedArray[i * width + j] = 1; // Outside the slanted stripe
+          }
+        } else {
+          // Keep the existing logic for non-mask pixels
+          stripedArray[i * width + j] = input[i * width + j];
+        }
+      }
+    }
+  
+    return stripedArray;
+  };
+  
 
-  const borderedArray = addBorder(transposedBinaryArray, imageWidth, imageHeight, 1);
+  const stripedArray = isCrowd ? addSlantedStripes(transposedBinaryArray, imageWidth, imageHeight) : transposedBinaryArray;
+  const borderedArray = addBorder(stripedArray, imageWidth, imageHeight, 1);
 
   const arrayToImageData = (input) => {
     // Map the values to the [0, 255] range
