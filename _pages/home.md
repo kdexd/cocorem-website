@@ -2,8 +2,8 @@
 layout: default
 permalink: "/"
 ---
-<link rel="stylesheet" type="text/css" href="/static/css/home.css">
 
+<link rel="stylesheet" type="text/css" href="/static/css/home.css">
 
 <div class="container">
  <div class="card text-center">
@@ -52,7 +52,7 @@ permalink: "/"
             <!-- <p class="section-description">Explore and download the latest version of the COCO-ReM dataset for your research.</p> -->
         </div>
 </div>
- <div class="dataset-overview">
+ <!-- <div class="dataset-overview">
         <h3 class="subsection-title mb-3">Dataset Overview</h3>
         <div class="row">
             <div class="col-md-4">
@@ -80,7 +80,41 @@ permalink: "/"
                 </div>
             </div>
         </div>
+    </div> -->
+<div class="dataset-overview">
+<div class="container mt-5">
+    <!-- Flip Cards -->
+    <h3 class="subsection-title mb-3">Dataset Overview</h3>
+    <div class="flip-card-container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>Validation set </h3>
+                </div>
+                <div class="flip-card-back">
+                    <span class="stat">Total Images : 5,000</span>
+                    <span class="stat">Object Categories : 80</span>
+                    <span class="stat">Total masks: 41k +</span>
+                    <span class="stat">Boundaries: Smooth Refined</span>
+                </div>
+            </div>
+        </div>  
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>Train Set</h3>
+                </div>
+                <div class="flip-card-back">
+                    <span class="stat">Stat 1</span>
+                    <span class="stat">Stat 2</span>
+                    <span class="stat">Stat 3</span>
+                    <span class="stat">Stat 4</span>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+</div>
 
 <div class="team-section">
     <!-- Shweta Singh-->
@@ -140,7 +174,3 @@ permalink: "/"
     </div>
     
 </div>
-
-
-
-

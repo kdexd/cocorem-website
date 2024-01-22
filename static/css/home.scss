@@ -63,6 +63,69 @@ p {
     
 
 }
+
+.flip-card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.flip-card {
+    width: 300px;
+    height: 180px;
+    perspective: 1000px;
+    border: 1px solid #029E73; /* Border color */
+    border-radius: 7px; /* Border radius */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 7px; /* Border radius for front and back */
+    // box-sizing: border-box; /* Include border in sizing */
+}
+
+.flip-card-front {
+    background-color: #029E73;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-style: bold;
+}
+
+.flip-card-back {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat {
+    color: #029E73; /* Green color */
+    font-size: 1.2em;
+    border-bottom: 1px solid #029E73; /* Border color for stats */
+    padding: 5px 0; /* Add padding for better appearance */
+}
+
+
 .team-section {
     text-align: center;
     margin-top: 50px;
@@ -70,7 +133,9 @@ p {
 
 .dataset-overview{
     padding: 20px;
-    border-radius: 3px;
+    border-radius: 50px;
+    margin-top: -35px;
+    
     
     .subsection-title{
         text-align: center;
