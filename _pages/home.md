@@ -55,35 +55,7 @@ permalink: "/"
             <!-- <p class="section-description">Explore and download the latest version of the COCO-ReM dataset for your research.</p> -->
         </div>
 </div>
- <!-- <div class="dataset-overview">
-        <h3 class="subsection-title mb-3">Dataset Overview</h3>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h5 class="card-title">Total Images</h5>
-                        <p class="card-text">5,000</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h5 class="card-title">Object Categories</h5>
-                        <p class="card-text">80</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h5 class="card-title">Boundaries</h5>
-                        <p class="card-text">Smooth Refined</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
+
 <div class="dataset-overview">
 <div class="container mt-5">
     <!-- Flip Cards -->
@@ -96,9 +68,9 @@ permalink: "/"
                 </div>
                 <div class="flip-card-back">
                     <span class="stat">Total Images : 5,000</span>
-                    <span class="stat">Object Categories : 80</span>
                     <span class="stat">Total masks: 41k +</span>
                     <span class="stat">Boundaries: Smooth Refined</span>
+                    <span class="stat">Manual Verification : Yes</span>
                 </div>
             </div>
         </div>  
@@ -108,10 +80,10 @@ permalink: "/"
                     <h3>Train Set</h3>
                 </div>
                 <div class="flip-card-back">
-                    <span class="stat">Stat 1</span>
-                    <span class="stat">Stat 2</span>
-                    <span class="stat">Stat 3</span>
-                    <span class="stat">Stat 4</span>
+                    <span class="stat">Total Images : 118,000</span>
+                    <span class="stat">Total masks: 1M +</span>
+                    <span class="stat">Boundaries: Smooth Refined</span>
+                    <span class="stat">Manual Verification : No</span>
                 </div>
             </div>
         </div>
@@ -127,7 +99,7 @@ permalink: "/"
             <img class="team-member-pic" src="{{ site.baseurl }}/assets/images/team/Shweta_singh.jpg" />
         </a>
         <div class="team-member-name">
-            <a href="" target="_blank">Shweta Singh</a> <sup>*</sup>
+            <a href="https://github.com/Shweta-singh1" target="_blank">Shweta Singh</a> <sup>*</sup>
         </div>
     </div>
     <!-- Aayan Yadav -->
@@ -136,7 +108,7 @@ permalink: "/"
             <img class="team-member-pic" src="{{ site.baseurl }}/assets/images/team/Aayan_yadav.jpg" />
         </a>
         <div class="team-member-name">
-            <a href="//github.com/zamborg" target="_blank">Aayan Yadav</a> <sup>*</sup>
+            <a href="https://github.com/ydvaayan" target="_blank">Aayan Yadav</a> <sup>*</sup>
         </div>
     </div>
     <!-- Jitesh Jain-->
@@ -148,7 +120,7 @@ permalink: "/"
             <a href="https://praeclarumjj3.github.io/" target="_blank">Jitesh Jain</a>
         </div>
     </div>
-    <!-- Team memeber-->
+    <!-- Humphrey Shi-->
     <div class="team-member">
         <a class="image-hyperlink" href="https://www.humphreyshi.com/home" target="_blank">
             <img class="team-member-pic" src="{{ site.baseurl }}/assets/images/team/Humphrey Shi.jpg" />
