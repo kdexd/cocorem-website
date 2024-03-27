@@ -35,12 +35,6 @@ permalink: "/"
 </div>
 </div>
 
-<div class="container mt-5">
-    <div class="additional-content">
-        <h2 class="mb-4">Explore Our Dataset</h2>
-        <p class="lead">Tap into the full potential of the carefully curated COCO-ReM dataset. Explore deep insights and emerging trends that could transform your research and applications. COCO-ReM sets a new standard with superior mask quality, offering a trustworthy evaluation set for the latest in object detectors.</p>
-    </div>
-</div>
 <script>
     function downloadValSetFromGCS() {
         const bucketName = 'cocorem';
@@ -66,50 +60,40 @@ permalink: "/"
     }
 </script>
 <div class="container mt-5">
-<div class="download-section">
-            <h2 class="section-title">Download COCO-ReM</h2>
-            <div class="row">
-            <div class="col-md-6 mb-3 ml-auto">
-                <a href="#" onclick="downloadValSetFromGCS()" class="btn btn-primary" id="validationBtn" style="white-space: nowrap;">Download Validation set</a>
+    <div class="download-section">
+        <!-- Dataset Overview -->
+        <h2 class="subsection-title mb-3">Download COCO-ReM</h2>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="card validation-card"> <!-- Added class "validation-card" -->
+                    <div class="card-body">
+                        <h3 class="card-title">Validation set</h3>
+                        <div class="stat-box">
+                            <div class="stat">Total Images: 5,000</div>
+                            <div class="stat">Total masks: 41k +</div>
+                            <div class="download-box">
+                                <a href="#" onclick="downloadValSetFromGCS()" class="btn btn-primary" id="validationBtn">Download Validation set</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-6 mb-3">
-                <a href="#" onclick="downloadTrainSetFromGCS()" class="btn btn-primary" id="trainBtn">Download Train set</a>
-            </div>
-</div>
-
-<div class="dataset-overview">
-<div class="container mt-5">
-    <!-- Flip Cards -->
-    <h3 class="subsection-title mb-3">Dataset Overview</h3>
-    <div class="flip-card-container">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h3>Validation set </h3>
-                </div>
-                <div class="flip-card-back">
-                    <span class="stat">Total Images : 5,000</span>
-                    <span class="stat">Total masks: 41k +</span>
-                    <span class="stat">Boundaries: Smooth Refined</span>
-                    <span class="stat">Manual Verification : Yes</span>
-                </div>
-            </div>
-        </div>  
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h3>Train Set</h3>
-                </div>
-                <div class="flip-card-back">
-                    <span class="stat">Total Images : 118,000</span>
-                    <span class="stat">Total masks: 1M +</span>
-                    <span class="stat">Boundaries: Smooth Refined</span>
-                    <span class="stat">Manual Verification : No</span>
+                <div class="card train-card"> <!-- Added class "train-card" -->
+                    <div class="card-body">
+                        <h3 class="card-title">Train Set</h3>
+                        <div class="stat-box">
+                            <div class="stat">Total Images: 118,000</div>
+                            <div class="stat">Total masks: 1M +</div>
+                            <div class="download-box">
+                                <a href="#" onclick="downloadTrainSetFromGCS()" class="btn btn-primary" id="trainBtn">Download Train set</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 
 <div class="team-section">

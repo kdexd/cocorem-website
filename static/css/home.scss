@@ -25,18 +25,6 @@
 
     
   }
-.additional-content {
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    padding: 10px;
-    // margin-top: 2%;
-    margin-left: 0px;
-    margin-right: 0px;
-    background-color: #fff;
-    margin-bottom: -25px;
-    margin-top: -25px;
-    
-}
 
 h2 {
     color: #029E73;
@@ -52,11 +40,13 @@ p {
     // margin-top: 20px; 
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     text-align: center;
     border: 1px solid #ced4da;
     border-radius: 5px;
-    padding: 5px;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
     margin-left: 0px;
     margin-right: 0px;
     background-color: #fff;
@@ -64,83 +54,61 @@ p {
 
 }
 
-.flip-card-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+.validation-card {
+    // width: 100%;
+    border: 1px solid #029E73; 
+    border-radius: 5px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(2, 158, 115, 0.1); 
+    margin-right: 10%;
 }
 
-.flip-card {
-    width: 300px;
-    height: 180px;
-    perspective: 1000px;
-    border: 1px solid #029E73; /* Border color */
-    border-radius: 7px; /* Border radius */
-    overflow: hidden; /* Hide overflow content */
+.train-card {
+    border: 1px solid #029E73; 
+    border-radius: 5px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(2, 158, 115, 0.1); 
+    margin-left: 5%;
 }
 
-.flip-card-inner {
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
+.card-title {
+    color: #029E73; 
+    margin-bottom: 0; 
+    margin-top: 0; 
+    border-bottom: 1px solid #029E73; 
+    border-radius: 5px 5px 0 0; 
 }
 
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    border-radius: 7px; /* Border radius for front and back */
-    // box-sizing: border-box; /* Include border in sizing */
-}
-
-.flip-card-front {
-    background-color: #029E73;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-style: bold;
-}
-
-.flip-card-back {
-    background-color: #ffffff;
-    transform: rotateY(180deg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.stat-box {
+    padding: 5px; 
 }
 
 .stat {
-    color: #029E73; /* Green color */
-    font-size: 1.2em;
-    border-bottom: 1px solid #029E73; /* Border color for stats */
-    padding: 5px 0; /* Add padding for better appearance */
+    color: #0a0a0a; 
+    font-size: 1.2em; 
+    padding: 5px 0; 
 }
+
+.download-box {
+    text-align: center; 
+    padding: 20px 0; 
+}
+
+.btn.btn-primary {
+    width: 100%;
+    background-color: #029E73; 
+    border-color: #029E73; 
+    font-size: 1rem; 
+    // padding: 10px 20px; 
+    white-space: nowrap;
+}
+
+
 
 
 .team-section {
     text-align: center;
     margin-top: 50px;
-}
-
-.dataset-overview{
-    padding: 20px;
-    border-radius: 50px;
-    margin-top: -35px;
-    
-    
-    .subsection-title{
-        text-align: center;
-        color: #029E73;
-    }
 }
 
 .team-member {
