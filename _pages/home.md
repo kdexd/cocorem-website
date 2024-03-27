@@ -67,7 +67,7 @@ permalink: "/"
             <div class="col-md-6 mb-3">
                 <div class="card validation-card"> <!-- Added class "validation-card" -->
                     <div class="card-body">
-                        <h3 class="card-title">Validation set</h3>
+                        <h3 class="card-title">Validation</h3>
                         <div class="stat-box">
                             <div class="stat">Total Images: 5,000</div>
                             <div class="stat">Total masks: 41k +</div>
@@ -81,9 +81,9 @@ permalink: "/"
             <div class="col-md-6 mb-3">
                 <div class="card train-card"> <!-- Added class "train-card" -->
                     <div class="card-body">
-                        <h3 class="card-title">Train Set</h3>
+                        <h3 class="card-title">Train</h3>
                         <div class="stat-box">
-                            <div class="stat">Total Images: 118,000</div>
+                            <div class="stat">Total Images: 118,287</div>
                             <div class="stat">Total masks: 1M +</div>
                             <div class="download-box">
                                 <a href="#" onclick="downloadTrainSetFromGCS()" class="btn btn-primary" id="trainBtn">Download Train set</a>

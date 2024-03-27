@@ -18,8 +18,8 @@
 .carousel-control-prev-icon,
   .carousel-control-next-icon {
     opacity: 5;
-    background-color: black; // Set the color of the button icon
-    border-radius: 50%; // Make the icon circular
+    background-color: black; 
+    border-radius: 50%; 
     transition: background-color 0.3s ease;
   }
 
@@ -42,8 +42,6 @@ p {
     flex-direction: column;
 
     text-align: center;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
     padding: 20px;
     padding-left: 10%;
     padding-right: 10%;
@@ -56,18 +54,18 @@ p {
 
 .validation-card {
     // width: 100%;
-    border: 1px solid #029E73; 
-    border-radius: 5px; 
+    border: 1px solid #ffffff; 
+    border-radius: 0px; 
     overflow: hidden; 
-    box-shadow: 0 4px 8px rgba(2, 158, 115, 0.1); 
+    box-shadow: 0 .5rem 1rem rgba(black, .15); 
     margin-right: 10%;
 }
 
 .train-card {
-    border: 1px solid #029E73; 
-    border-radius: 5px; 
+    border: 1px solid #ffffff; 
+    border-radius: 0px; 
     overflow: hidden; 
-    box-shadow: 0 4px 8px rgba(2, 158, 115, 0.1); 
+    box-shadow: 0 .5rem 1rem rgba(black, .15); 
     margin-left: 5%;
 }
 
