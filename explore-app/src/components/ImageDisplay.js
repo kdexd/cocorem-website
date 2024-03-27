@@ -49,7 +49,7 @@ const ImageDisplay = ({ imageId, annotations1, annotations2 }) => {
       });
     };
 
-    img.src = `https://storage.googleapis.com/cocorem-images/val2017/${imageId}.jpg`;
+    img.src = `https://storage.googleapis.com/cocorem/val2017/${imageId}.jpg`;
     setImageLoaded(true);
   };
 
