@@ -44,7 +44,18 @@ permalink: "/"
 <script>
     function downloadValSetFromGCS() {
         const bucketName = 'cocorem';
-        const filePath = 'annotations/sample.zip';
+        const filePath = 'instances_valrem.json.zip';
+        const downloadUrl = `https://storage.googleapis.com/${bucketName}/${filePath}`;      
+        const anchor = document.createElement('a');
+        anchor.href = downloadUrl;
+        anchor.download = filePath.split('/').pop();
+        document.body.appendChild(anchor);
+        anchor.click();
+        document.body.removeChild(anchor);
+    }
+    function downloadTrainSetFromGCS() {
+        const bucketName = 'cocorem';
+        const filePath = 'instances_trainrem.json.zip';
         const downloadUrl = `https://storage.googleapis.com/${bucketName}/${filePath}`;      
         const anchor = document.createElement('a');
         anchor.href = downloadUrl;
@@ -62,7 +73,7 @@ permalink: "/"
                 <a href="#" onclick="downloadValSetFromGCS()" class="btn btn-primary" id="validationBtn" style="white-space: nowrap;">Download Validation set</a>
             </div>
             <div class="col-md-6 mb-3">
-                <a href="/path/to/train/set/download" class="btn btn-primary" id="trainBtn">Download Train set</a>
+                <a href="#" onclick="downloadTrainSetFromGCS()" class="btn btn-primary" id="trainBtn">Download Train set</a>
             </div>
 </div>
 
