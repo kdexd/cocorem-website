@@ -41,19 +41,29 @@ permalink: "/"
         <p class="lead">Tap into the full potential of the carefully curated COCO-ReM dataset. Explore deep insights and emerging trends that could transform your research and applications. COCO-ReM sets a new standard with superior mask quality, offering a trustworthy evaluation set for the latest in object detectors.</p>
     </div>
 </div>
+<script>
+    function downloadValSetFromGCS() {
+        const bucketName = 'cocorem';
+        const filePath = 'annotations/sample.zip';
+        const downloadUrl = `https://storage.googleapis.com/${bucketName}/${filePath}`;      
+        const anchor = document.createElement('a');
+        anchor.href = downloadUrl;
+        anchor.download = filePath.split('/').pop();
+        document.body.appendChild(anchor);
+        anchor.click();
+        document.body.removeChild(anchor);
+    }
+</script>
 <div class="container mt-5">
 <div class="download-section">
             <h2 class="section-title">Download COCO-ReM</h2>
             <div class="row">
             <div class="col-md-6 mb-3 ml-auto">
-                <a href="/path/to/validation/set/download" class="btn btn-primary" id="validationBtn" style="white-space: nowrap;">Download Validation set</a>
+                <a href="#" onclick="downloadValSetFromGCS()" class="btn btn-primary" id="validationBtn" style="white-space: nowrap;">Download Validation set</a>
             </div>
             <div class="col-md-6 mb-3">
                 <a href="/path/to/train/set/download" class="btn btn-primary" id="trainBtn">Download Train set</a>
             </div>
-
-            <!-- <p class="section-description">Explore and download the latest version of the COCO-ReM dataset for your research.</p> -->
-        </div>
 </div>
 
 <div class="dataset-overview">
