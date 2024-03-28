@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const ImageInput = ({ onImageIdChange }) => {
   const [imageId, setImageId] = useState('');
   const [isSearchFocused, setIsSearchFocused] = useState(false);
-  const suggestions = ['139', '285', '1000', '2431', '2592', '14038','26926','28809','45472','50844','543528','54628', '67213', '82807', '228436','238866', '276434', '354072', '370042','429281', '446117'];
+  const suggestions = ['139', '285', '1000', '2431', '2592', '14038','26926','28809','45472','50844','543528','54628', '67213', '82807', '228436','238866', '276434', '354072', '429281', '446117'];
 
   const handleChange = (event) => setImageId(event.target.value.replace(/^0+/, ''));
 

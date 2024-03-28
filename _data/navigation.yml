@@ -4,7 +4,7 @@
   link: /
 - name: Explore
   link: /_pages/explore.html
-# - name: About
-#   link: /about.html
 - name: Paper
-  link: /paper.html
+  link: https://arxiv.org/abs/2403.18819
+- name: CODE
+  link: https://github.com/kdexd/coco-rem
