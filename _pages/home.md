@@ -35,30 +35,6 @@ permalink: "/"
 </div>
 </div>
 
-<script>
-    function downloadValSetFromGCS() {
-        const bucketName = 'cocorem';
-        const filePath = 'instances_valrem.json.zip';
-        const downloadUrl = `https://storage.googleapis.com/${bucketName}/${filePath}`;      
-        const anchor = document.createElement('a');
-        anchor.href = downloadUrl;
-        anchor.download = filePath.split('/').pop();
-        document.body.appendChild(anchor);
-        anchor.click();
-        document.body.removeChild(anchor);
-    }
-    function downloadTrainSetFromGCS() {
-        const bucketName = 'cocorem';
-        const filePath = 'instances_trainrem.json.zip';
-        const downloadUrl = `https://storage.googleapis.com/${bucketName}/${filePath}`;      
-        const anchor = document.createElement('a');
-        anchor.href = downloadUrl;
-        anchor.download = filePath.split('/').pop();
-        document.body.appendChild(anchor);
-        anchor.click();
-        document.body.removeChild(anchor);
-    }
-</script>
 <div class="container mt-5">
     <div class="download-section">
         <!-- Dataset Overview -->
@@ -72,7 +48,7 @@ permalink: "/"
                             <div class="stat">Total Images: 5,000</div>
                             <div class="stat">Total masks: 41k +</div>
                             <div class="download-box">
-                                <a href="#" onclick="downloadValSetFromGCS()" class="btn btn-primary" id="validationBtn">Download Validation set</a>
+                                <a href="https://huggingface.co/datasets/kdexd/coco-rem/resolve/main/instances_valrem.json.zip?download=true"  class="btn btn-primary" id="validationBtn">Download Validation set</a>
                             </div>
                         </div>
                     </div>
@@ -86,7 +62,7 @@ permalink: "/"
                             <div class="stat">Total Images: 118,287</div>
                             <div class="stat">Total masks: 1M +</div>
                             <div class="download-box">
-                                <a href="#" onclick="downloadTrainSetFromGCS()" class="btn btn-primary" id="trainBtn">Download Train set</a>
+                                <a href="https://huggingface.co/datasets/kdexd/coco-rem/resolve/main/instances_trainrem.json.zip?download=true"  class="btn btn-primary" id="trainBtn">Download Train set</a>
                             </div>
                         </div>
                     </div>
